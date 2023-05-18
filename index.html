@@ -13,7 +13,7 @@
   
   <title>Fresh Harvest Box </title>
   <script type="module" crossorigin src="/DevGen/assets/index-fac82e35.js"></script>
-  <link rel="stylesheet" href="/DevGen/assets/index-c6cf0c5c.css">
+  <link rel="stylesheet" href="/DevGen/assets/index-7095e099.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                 <use href=""></use>
             </svg>
         </button>
-        <ul>
+        <ul class="cart-colection">
             <li class="order-cart">
                 <h3 class="cart-title">Strawberry Basket</h3>
                 <p class="categori">Plant</p>
@@ -53,18 +53,22 @@
             </li>
         </ul>
         <form>
-            <lable class="data-lable">Enter full name...
-                <input type="text" class="data-input">
+            <lable class="data-lable" for:="Full-name">
+                <span class="input-text-inform">Enter full name...</span>
+                <input type="text" class="data-input" name="Full-name">
             </lable>
-            <lable class="data-lable">Enter email...
-                <input type="email" class="data-input">
+            <lable class="data-lable" for:="mail"><span class="input-text-inform">Enter email...</span>
+                <input type="email" class="data-input" name="mail">
             </lable>
-            <lable class="data-lable">Enter card..
-                <input type="tel" class="data-input">
+            <lable class="data-lable" for:="card">
+                <span class="input-text-inform">Enter card..</span>
+                <input type="tel" class="data-input" name="card">
             </lable>
-            <lable class="data-lable">Enter comments...
-                <textarea class="data-input" name="Comment" rows="4" placeholder="Text input"></textarea>
+            <lable class="data-lable" for:="Content">
+                <span class="input-text-inform">Enter comments...</span>
+                <textarea class="data-input-comment" name="Comment" rows="4"></textarea>
             </lable>
+
             <button class="order-button" type="submit">Submit</button>
         </form>
     </div>
