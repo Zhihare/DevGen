@@ -81,16 +81,16 @@ body {
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 704px) {
   .container {
-    max-width: 768px;
+    max-width: 704px;
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1215px) {
   .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    max-width: 1215px;
+    padding: 0 30px;
   }
 }
 
