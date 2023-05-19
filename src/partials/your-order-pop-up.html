@@ -40,19 +40,20 @@
         </ul>
         <form>
             <lable class="data-lable" for:="Full-name">
+                <input type="text" class="data-input" name="Full-name" placeholder="&nbsp;">
                 <span class="input-text-inform">Enter full name...</span>
-                <input type="text" class="data-input" name="Full-name">
             </lable>
-            <lable class="data-lable" for:="mail"><span class="input-text-inform">Enter email...</span>
-                <input type="email" class="data-input" name="mail">
+            <lable class="data-lable" for:="mail">
+                <input type="email" class="data-input" name="mail" placeholder="&nbsp;">
+                <span class="input-text-inform">Enter email...</span>
             </lable>
             <lable class="data-lable" for:="card">
+                <input type="tel" class="data-input" name="card" placeholder="&nbsp;">
                 <span class="input-text-inform">Enter card..</span>
-                <input type="tel" class="data-input" name="card">
             </lable>
             <lable class="data-lable" for:="Comment">
-                <span class="input-text-inform">Enter comments...</span>
-                <textarea class="data-input-comment" name="Comment" rows="4"></textarea>
+                <textarea class="data-input-comment" name="Comment" rows="4" placeholder="&nbsp;"></textarea>
+                <span class="input-text-inform in-textarea">Enter comments...</span>
             </lable>
 
             <button class="order-button" type="submit">Submit</button>
