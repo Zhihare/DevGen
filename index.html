@@ -13,7 +13,7 @@
   
   <title>Fresh Harvest Box </title>
   <script type="module" crossorigin src="/DevGen/assets/index-fac82e35.js"></script>
-  <link rel="stylesheet" href="/DevGen/assets/index-7443930f.css">
+  <link rel="stylesheet" href="/DevGen/assets/index-51ac2288.css">
 </head>
 
 <body>
@@ -26,6 +26,16 @@
   
   <div class="backdrop is-hidden">
     <div class="modal-window">
+        <picture class="background-img">
+            <source
+                srcset="../img/your-order-pop-up/IMG_9760_1768.png 1x, ../img/your-order-pop-up/IMG_9760_1@2x768.png 2x"
+                media="(min-width: 704px)" />
+            <source
+                srcset="../img/your-order-pop-up/IMG_9760_11200.png 1x, ../img/your-order-pop-up/IMG_9760_1@2x1200.png 2x"
+                media="(min-width: 1280px)" />
+            <img src="../img/your-order-pop-up/IMG_9760_11200.png" alt="girl and Fresh Fruits" max-width="471"
+                max-height="458" loading="lazy" />
+        </picture>
         <h2 class="order-title">YOU ORDER</h2>
         <button class="close-wind" type="button">
             <svg class="close" width="15" height="15">
@@ -38,9 +48,8 @@
                     <h3 class="cart-title">Strawberry Basket</h3>
                     <p class="categori">Plant</p>
                 </div>
-                <img class="cart-img"
-                    srcset="../img/your-order-pop-up/kisspng-strawberry1.png 1x, ../img/your-order-pop-up/kisspng-strawberry1@2x.png 2x"
-                    src="../img/your-order-pop-up/kisspng-strawberry1.png" alt="Strawberry" width="88" loading="lazy">
+                <div class="img-container">
+                </div>
                 <input class="cart-checkbox" type="checkbox">
             </li>
             <li class="order-cart">
@@ -48,9 +57,8 @@
                     <h3 class="cart-title">Apple Basket</h3>
                     <p class="categori">Plant</p>
                 </div>
-                <img class="cart-img"
-                    srcset="../img/your-order-pop-up/IMG_9757_1.png 1x, ../img/your-order-pop-up/IMG_9757_1@2x.png 2x"
-                    src="../img/your-order-pop-up/IMG_9757_1.png" alt="Strawberry" width="106" loading="lazy">
+                <div class="img-container">
+                </div>
                 <input class="cart-checkbox" type="checkbox">
             </li>
             <li class="order-cart">
@@ -58,13 +66,12 @@
                     <h3 class="cart-title">Fruits Basket</h3>
                     <p class="categori">Plant</p>
                 </div>
-                <img class="cart-img"
-                    srcset="../img/your-order-pop-up/unsplash_zeFy-oCUhV8.png 1x, ../img/your-order-pop-up/unsplash_zeFy-oCUhV8@2x.png 2x"
-                    src="../img/your-order-pop-up/unsplash_zeFy-oCUhV8.png" alt="Strawberry" width="107" loading="lazy">
+                <div class="img-container">
+                </div>
                 <input class="cart-checkbox" type="checkbox">
             </li>
         </ul>
-        <form>
+        <form class="order-form">
             <lable class="data-lable" for:="Full-name">
                 <input type="text" class="data-input" name="Full-name" placeholder="&nbsp;">
                 <span class="input-text-inform">Enter full name...</span>
@@ -84,6 +91,7 @@
 
             <button class="order-button" type="submit">Submit</button>
         </form>
+
     </div>
 </div>
   
