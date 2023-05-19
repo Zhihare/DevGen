@@ -40,13 +40,22 @@
 }
 
 .close-wind {
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-50%, 50%);
+    transform: translate(-75%, 75%);
+
+    background-color: transparent;
+    border: none;
 }
 
-.close {}
+.close {
+    fill: #AE1332;
+}
 
 .cart-colection {
     display: flex;
@@ -59,6 +68,8 @@
 
 .order-cart {
     position: relative;
+    display: flex;
+
     width: 100%;
     height: 119px;
     padding: 20px;
@@ -75,11 +86,24 @@
     background-color: #9DC262;
 }
 
-.cart-title {}
+.cart-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.04em;
+}
 
-.categori {}
+.categori {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
 
-.cart-img {}
+.cart-img {
+    margin-right: 12px;
+    margin-left: auto;
+}
 
 .cart-checkbox {
     position: absolute;
