@@ -15,7 +15,8 @@
 
 .modal-window {
     position: relative;
-    width: 100%;
+    min-width: 320px;
+    width: 335px;
     padding: 20px;
 
     position: absolute;
@@ -27,16 +28,16 @@
     border-radius: 20px;
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .modal-window {
         padding: 40px;
-        max-width: 890px;
+        width: 704px;
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
     .modal-window {
-        max-width: 890px;
+        width: 890px;
     }
 }
 
@@ -57,7 +58,7 @@
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .order-title {
         font-size: 40px;
         line-height: 1.1;
@@ -78,7 +79,7 @@
     border: none;
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .close-wind {
         width: 28px;
         height: 28px;
@@ -93,16 +94,15 @@
 .cart-colection {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column-reverse;
     gap: 12px;
 
     margin-bottom: 40px;
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .cart-colection {
         flex-wrap: nowrap;
-        flex-direction: row-reverse;
+
     }
 }
 
@@ -123,7 +123,7 @@
     border-radius: 20px;
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .order-cart {
         flex-wrap: wrap;
         padding: 40px 20px 14px 20px;
@@ -136,7 +136,7 @@
     background-color: #EDD251;
 }
 
-.order-cart:nth-last-child(3) {
+.order-cart:nth-last-child(1) {
     background-color: #9DC262;
 }
 
@@ -165,54 +165,49 @@
 
 .img-container {
     height: 95px;
+    width: 150px;
     margin-right: 12px;
     margin-left: auto;
 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
 
-.order-cart:nth-last-child(1)>.img-container {
-    width: 88px;
     background-image: url(../img/your-order-pop-up/kisspng-strawberry1.png);
 }
 
+
 .order-cart:nth-last-child(2)>.img-container {
-    width: 106px;
+    width: 159px;
     background-image: url(../img/your-order-pop-up/IMG_9757_1.png);
 }
 
-.order-cart:nth-last-child(3)>.img-container {
-    width: 107px;
+.order-cart:nth-last-child(1)>.img-container {
+    width: 159px;
     background-image: url(../img/your-order-pop-up/unsplash_zeFy-oCUhV8.png);
 }
 
 
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .img-container {
         height: 150px;
         margin: 0 auto;
-    }
-}
-
-@media only screen and (min-width: 704px) {
-    .order-cart:nth-last-child(1)>.img-container {
         width: 133px;
         background-image: url(../img/your-order-pop-up/kisspng-strawberry1768.png);
     }
 }
 
-@media only screen and (min-width: 704px) {
+
+@media only screen and (min-width: 768px) {
     .order-cart:nth-last-child(2)>.img-container {
         width: 172px;
         background-image: url(../img/your-order-pop-up/IMG_9757_1768.png);
     }
 }
 
-@media only screen and (min-width: 704px) {
-    .order-cart:nth-last-child(3)>.img-container {
+@media only screen and (min-width: 768px) {
+    .order-cart:nth-last-child(1)>.img-container {
         width: 172px;
         background-image: url(../img/your-order-pop-up/unsplash_zeFy-oCUhV8768.png);
     }
@@ -221,15 +216,11 @@
 @media only screen and (min-width: 1280px) {
     .img-container {
         height: 196px;
-    }
-}
-
-@media only screen and (min-width: 1280px) {
-    .order-cart:nth-last-child(1)>.img-container {
         width: 173px;
         background-image: url(../img/your-order-pop-up/kisspng-strawberry11200.png);
     }
 }
+
 
 @media only screen and (min-width: 1280px) {
     .order-cart:nth-last-child(2)>.img-container {
@@ -239,7 +230,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .order-cart:nth-last-child(3)>.img-container {
+    .order-cart:nth-last-child(1)>.img-container {
         width: 229px;
         background-image: url(../img/your-order-pop-up/unsplash_zeFy-oCUhV81200.png);
     }
@@ -266,7 +257,7 @@
     transition: outline-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .cart-checkbox {
         width: 20px;
         height: 20px;
@@ -279,13 +270,13 @@
     background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .cart-checkbox:checked {
         background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.90334 0.263362C5.08929 -0.010914 5.46237 -0.0825163 5.73664 0.103434C6.01091 0.289383 6.08252 0.66247 5.89657 0.936745L2.64239 5.7367C2.40438 6.08777 1.88717 6.08777 1.64916 5.7367L0.103432 3.45673C-0.0825154 3.18245 -0.0109139 2.80936 0.263359 2.62341C0.537632 2.43747 0.910715 2.50907 1.09666 2.78334L2.14578 4.3308L4.90334 0.263362Z' fill='white'/%3E%3C/svg%3E");
     }
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .order-form {
         width: 360px;
         height: 400px;
@@ -335,7 +326,7 @@
     background-color: #FFFFFF;
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .input-text-inform.in-textarea {
         top: -135px;
     }
@@ -366,7 +357,7 @@
 
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .data-input {
         height: 48px;
     }
@@ -385,7 +376,7 @@
     background-color: transparent;
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .data-input-comment {
         height: 142px;
     }
@@ -406,7 +397,7 @@
     color: #FFFFFF;
 }
 
-@media only screen and (min-width: 704px) {
+@media only screen and (min-width: 768px) {
     .order-button {
         width: 114px;
         height: 48px;
@@ -419,7 +410,7 @@
     background-color: #EDD251;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 703px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
     .background-img {
         display: none;
     }
@@ -429,10 +420,4 @@
     position: absolute;
     right: 0;
     bottom: 0;
-}
-
-@media only screen and (min-width: 1280px) {
-    .background-img {
-        transform: translate(-50%, 0);
-    }
 }
