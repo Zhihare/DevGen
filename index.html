@@ -12,93 +12,138 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
   
   <title>Fresh Harvest Box </title>
-  <script type="module" crossorigin src="/DevGen/assets/index-fac82e35.js"></script>
-  <link rel="stylesheet" href="/DevGen/assets/index-319424d6.css">
+  <script type="module" crossorigin src="/DevGen/assets/index-7ae64c72.js"></script>
+  <link rel="stylesheet" href="/DevGen/assets/index-f2ee2ad7.css">
 </head>
 
 <body>
-
-  
-  
-  
-  
-  
-  
-  <div class="backdrop is-hidden">
-    <div class="modal-window">
-        <h2 class="order-title">YOU ORDER</h2>
-        <button class="close-wind" type="button">
-            <svg class="close" width="24" height="24">
-                <use href="/DevGen/assets/icon-43b4e009.svg#icon-clos"></use>
-            </svg>
-        </button>
-        <form>
-            <ul class="cart-colection">
-                <li class="order-cart">
+  <button class="experient js-open-modal" data-modal="1">Заказать</button>
+  <div class="modal-window modal" data-modal="1">
+    <h2 class="order-title">YOU ORDER</h2>
+    <button class="close-wind js-modal-close" type="button">
+        <svg class="close" width="24" height="24">
+            <use href="/DevGen/assets/icon-43b4e009.svg#icon-clos"></use>
+        </svg>
+    </button>
+    <form class="modal-form">
+        <ul class="cart-colection">
+            <li class="order-cart">
+                <label class="order-box">
                     <div class="title-section">
-                        <label class="cart-title">Strawberry Basket</label>
-                        <label class="categori">Plant</label>
+                        <h3 class="cart-title">Strawberry Basket</h3>
+                        <p class="categori">Plant</p>
                     </div>
-                    <div class="img-container">
-                    </div>
+                    <picture class="img-container">
+                        <source
+                            srcset="/DevGen/assets/kisspng-strawberry1-241e2d11.png 1x, /DevGen/assets/kisspng-strawberry1@2x-515989a5.png 2x"
+                            media="(max-width: 325px)" sizes="(width: 88px) 88px, 100vw">
+                        <source
+                            srcset="/DevGen/assets/kisspng-strawberry1768-0eb8cc48.png 1x, /DevGen/assets/kisspng-strawberry1@2x768-344f9af3.png 2x"
+                            media="(max-width: 1280px)" sizes="(width: 133px) 133px, 100vw">
+                        <source
+                            srcset="/DevGen/assets/kisspng-strawberry11200-19974a1b.png 1x, /DevGen/assets/kisspng-strawberry1@2x1200-04631f96.png 2x"
+                            media="(min-width: 1280px)" sizes="(width: 173px) 173px, 100vw">
+                        <img src="/DevGen/assets/kisspng-strawberry1-241e2d11.png" alt="Strawberry">
+                    </picture>
                     <input class="cart-checkbox" type="checkbox">
-                </li>
-                <li class="order-cart">
-                    <div class="title-section">
-                        <label class="cart-title">Apple Basket</label>
-                        <label class="categori">Plant</label>
-                    </div>
-                    <div class="img-container">
-                    </div>
-                    <input class="cart-checkbox" type="checkbox">
-                </li>
-                <li class="order-cart">
-                    <div class="title-section">
-                        <label class="cart-title">Fruits Basket</label>
-                        <label class="categori">Plant</label>
-                    </div>
-                    <div class="img-container">
-                    </div>
-                    <input class="cart-checkbox" type="checkbox">
-                </li>
-            </ul>
-            <div class="order-form">
-                <lable class="data-lable" for:="Full-name">
-                    <input type="text" class="data-input" name="Full-name" placeholder="&nbsp;">
-                    <span class="input-text-inform">Enter full name...</span>
-                </lable>
-                <lable class="data-lable" for:="mail">
-                    <input type="email" class="data-input" name="mail" placeholder="&nbsp;">
-                    <span class="input-text-inform">Enter email...</span>
-                </lable>
-                <lable class="data-lable" for:="card">
-                    <input type="text" class="data-input" name="card" maxlength="16" pattern="[0-9]{16}"
-                        placeholder="&nbsp;">
-                    <span class="input-text-inform">Enter card..</span>
-                </lable>
-                <lable class="data-lable" for:="Comment">
-                    <textarea class="data-input-comment" name="Comment" rows="4" placeholder="&nbsp;"></textarea>
-                    <span class="input-text-inform in-textarea">Enter comments...</span>
-                </lable>
+                </label>
+            </li>
+            <li class="order-cart">
+                <label class="order-box">
 
-                <button class="order-button" type="submit">Submit</button>
-            </div>
-            <picture class="background-img">
-                <source
-                    srcset="/DevGen/assets/IMG_9760_290-564d5b79.png 1x, /DevGen/assets/IMG_9760_580-60e32fb9.png 2x"
-                    media="(max-width: 1279px)" sizes="(min-width: 480px) 480px, 100vw">
-                <source
-                    srcset="/DevGen/assets/IMG_9760_471-8f0f0908.png 1x, /DevGen/assets/IMG_9760_942-922e73ab.png 2x"
-                    media="(min-width: 1280px)" sizes="(min-width: 480px) 480px, 100vw">
-                <img src="/DevGen/assets/IMG_9760_290-564d5b79.png" alt="women and Fresh Fruits">
-            </picture>
-        </form>
+                    <div class="title-section">
+                        <h3 class="cart-title">Apple Basket</h3>
+                        <p class="categori">Plant</p>
+                    </div>
+                    <picture class="img-container">
+                        <source
+                            srcset="./img/your-order-pop-up/unsplash_zeFy-oCUhV8.png 1x, ./img/your-order-pop-up/unsplash_zeFy-oCUhV8.png@2x 2x"
+                            media="(max-width: 325px)" sizes="(width: 107px) 107px, 100vw">
+                        <source
+                            srcset="/DevGen/assets/unsplash_zeFy-oCUhV8768-c0746c4e.png 1x, /DevGen/assets/unsplash_zeFy-oCUhV8@2x768-f7a8f5aa.png 2x"
+                            media="(max-width: 1279px)" sizes="(width: 172px) 172px, 100vw">
+                        <source
+                            srcset="/DevGen/assets/unsplash_zeFy-oCUhV81200-dc723ce1.png 1x, /DevGen/assets/unsplash_zeFy-oCUhV8@2x1200-dfb9e6b9.png 2x"
+                            media="(min-width: 1280px)" sizes="(width: 229px) 229px, 100vw">
+                        <img src="/DevGen/assets/unsplash_zeFy-oCUhV8-5779082a.png" alt="Strawberry">
+                    </picture>
+                    <input class="cart-checkbox" type="checkbox">
+                </label>
+            </li>
+            <li class="order-cart">
+                <label class="order-box">
 
+                    <div class="title-section">
+                        <h3 class="cart-title">Fruits Basket</h3>
+                        <p class="categori">Plant</p>
+                    </div>
+                    <picture class="img-container">
+                        <source
+                            srcset="/DevGen/assets/IMG_9757_1-40442617.png 1x, /DevGen/assets/IMG_9757_1@2x-392ebd00.png 2x"
+                            media="(max-width: 325px)" sizes="(width: 107px) 107px, 100vw">
+                        <source
+                            srcset="/DevGen/assets/IMG_9757_1768-f6553f76.png 1x, /DevGen/assets/IMG_9757_1@2x768-2eadedf9.png 2x"
+                            media="(max-width: 1279px)" sizes="(width: 172px) 172px, 100vw">
+                        <source
+                            srcset="/DevGen/assets/IMG_9757_11200-0af23015.png 1x, /DevGen/assets/IMG_9757_1@2x1200-73edc912.png 2x"
+                            media="(min-width: 1280px)" sizes="(width: 229px) 229px, 100vw">
+                        <img src="/DevGen/assets/IMG_9757_1-40442617.png" alt="Strawberry">
+                    </picture>
+                    <input class="cart-checkbox" type="checkbox">
+                </label>
+            </li>
+        </ul>
+        <div class="order-form">
+            <lable class="data-lable" for:="Full-name">
+                <input type="text" class="data-input" name="Full-name" placeholder="&nbsp;">
+                <span class="input-text-inform">Enter full name...</span>
+            </lable>
+            <lable class="data-lable" for:="mail">
+                <input type="email" class="data-input" name="mail" placeholder="&nbsp;">
+                <span class="input-text-inform">Enter email...</span>
+            </lable>
+            <lable class="data-lable" for:="card">
+                <input type="text" class="data-input" name="card" maxlength="16" pattern="[0-9]{16}"
+                    placeholder="&nbsp;">
+                <span class="input-text-inform">Enter card..</span>
+            </lable>
+            <lable class="data-lable" for:="Comment">
+                <textarea class="data-input-comment" name="Comment" rows="4" placeholder="&nbsp;"></textarea>
+                <span class="input-text-inform in-textarea">Enter comments...</span>
+            </lable>
+
+            <button class="order-button js-open-modal" type="submit" data-modal="2">Submit</button>
+        </div>
+        <picture class="background-img">
+            <source srcset="/DevGen/assets/IMG_9760_290-564d5b79.png 1x, /DevGen/assets/IMG_9760_580-60e32fb9.png 2x"
+                media="(max-width: 1279px)" sizes="(min-width: 480px) 480px, 100vw">
+            <source srcset="/DevGen/assets/IMG_9760_471-8f0f0908.png 1x, /DevGen/assets/IMG_9760_942-922e73ab.png 2x"
+                media="(min-width: 1280px)" sizes="(min-width: 480px) 480px, 100vw">
+            <img src="/DevGen/assets/IMG_9760_290-564d5b79.png" alt="women and Fresh Fruits">
+        </picture>
+    </form>
+
+</div>
+<div class="backdrop js-overlay-modal"></div>
+  <div class="modal_window_content modal" data-modal="2">
+    <button class="modal_close-btn js-modal-close" type="button">
+        <svg class="modal_close-icon" width="28" height="28">
+            <use href="/DevGen/assets/icon-43b4e009.svg#icon-clos"></use>
+        </svg>
+    </button>
+    <img class="thank-you-img" src="../img/thank-you-pop-up/strawberry768.png" alt="Strawberry" width="207">
+
+    <div class="modal_text">
+        <h2 class="modal_title">THANK YOU</h2>
+        <p class="modal_subtitle">
+            Thank you for your order! Our team is preparing your box with fresh,
+            delicious fruits and vegetables, and we'll deliver it straight to your
+            doorstep. We appreciate your business and look forward to providing you
+            with the best possible experience!
+        </p>
     </div>
 </div>
-  
-  
-  
+<div class="modal_window window backdrop js-overlay-modal"></div>
 
 
   
